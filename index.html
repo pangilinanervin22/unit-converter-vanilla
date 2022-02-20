@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite App</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<section class="card-title">
+				<h1>Unit Conversion</h1>
+				<select id="unit"></select>
+			</section>
+			<section class="card-container">
+				<div class="card-input">
+					<input type="number" name="first" id="first-input" />
+					<select id="first-unit" class="input-unit"></select>
+				</div>
+				<span>=</span>
+				<div class="card-input">
+					<input type="number" name="second" id="second-input" />
+					<select id="second-unit" class="input-unit"></select>
+				</div>
+			</section>
+		</main>
+
+		<!-- <script src="https://kit.fontawesome.com/25c562aa2d.js" crossorigin="anonymous"></script> -->
+		<script defer type="module" src="/main.js"></script>
+	</body>
+</html>
