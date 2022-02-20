@@ -27,7 +27,7 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 80%;
+	width: 730px;
 	background-color: #282c34;
 	padding: 4rem 0.5rem;
 }
@@ -37,13 +37,13 @@ main {
 }
 
 .card-title {
-	width: 80%;
-	margin-bottom: 1rem;
+	width: 90%;
+	margin-bottom: 2rem;
 }
 
 .card-container {
 	display: flex;
-	width: 80%;
+	width: 90%;
 	align-items: center;
 	justify-content: space-between;
 	color: gray;
@@ -80,7 +80,7 @@ input {
 
 select {
 	background: rgba(245, 245, 245, 0.9);
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 
 option {
@@ -100,6 +100,28 @@ select:hover {
 	background: black;
 }
 
-option:focus {
-	background: red;
+@media only screen and (max-width: 680px) {
+	main {
+		width: 95%;
+	}
+	.card-container {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		flex-direction: column;
+		color: gray;
+	}
+
+	.card-title,
+	.card-input {
+		width: 95%;
+	}
+
+	input {
+		font-size: 2.5rem;
+	}
+
+	#equal {
+		visibility: hidden;
+	}
 }
