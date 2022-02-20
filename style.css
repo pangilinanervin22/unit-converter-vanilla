@@ -17,7 +17,9 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: #101114;
 	height: 100vh;
+	width: 100vw;
 }
 
 main {
@@ -25,9 +27,9 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 80vmin;
-	background: tomato;
-	padding: 2rem;
+	width: 80%;
+	background-color: #282c34;
+	padding: 4rem 0.5rem;
 }
 
 #unit {
@@ -36,14 +38,15 @@ main {
 
 .card-title {
 	width: 80%;
+	margin-bottom: 1rem;
 }
 
 .card-container {
 	display: flex;
 	width: 80%;
-	padding: 1rem;
 	align-items: center;
 	justify-content: space-between;
+	color: gray;
 }
 
 .card-input {
@@ -62,4 +65,41 @@ i {
 
 span {
 	font-size: 4rem;
+}
+
+h1 {
+	color: #ffbb00;
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+input {
+	font-size: 3rem;
+	padding: 0.2rem 3px;
+}
+
+select {
+	background: rgba(245, 245, 245, 0.9);
+	font-size: 1.5rem;
+}
+
+option {
+	font-size: 1.3rem;
+	color: whitesmoke;
+	background: black;
+}
+
+select:focus,
+input:focus {
+	border: 1px solid #ffbb00;
+	outline: none;
+}
+
+select:hover {
+	color: whitesmoke;
+	background: black;
+}
+
+option:focus {
+	background: red;
 }

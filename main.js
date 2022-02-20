@@ -25,7 +25,7 @@ const unitArray = [
 
 for (const item of unitArray)
 	selectUnitDOM.innerHTML += `<option value="${item}" 
-	${currentUnit == item ? "selected" : ""}>${item}</option>`;
+	${currentUnit == item ? "selected" : ""}>${capitalize(item)}</option>`;
 
 selectUnitDOM.addEventListener("change", (event) => {
 	firstUnitDOM.innerHTML = "";
@@ -101,6 +101,10 @@ function changeUnitType(isFirstChange, value) {
 
 function getCurrentUnitArray() {
 	return converter[currentUnit]().list();
+}
+
+function capitalize(string = "capital") {
+	return string[0].toUpperCase() + string.slice(1);
 }
 
 renderSelectUnit(currentUnit);
