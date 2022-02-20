@@ -1,3 +1,4 @@
+import "./style.css";
 import * as converter from "units-converter";
 
 const selectUnitDOM = document.getElementById("unit");
