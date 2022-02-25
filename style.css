@@ -1,4 +1,4 @@
-html {
+:root {
 	font-size: 62.5%;
 }
 
@@ -23,27 +23,36 @@ body {
 }
 
 main {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 730px;
 	background-color: #282c34;
-	padding: 4rem 0.5rem;
+	padding: 4rem 2rem;
 }
 
 #unit {
 	width: 100%;
 }
 
+#version-logo {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 4rem;
+	margin: 1rem;
+}
+
 .card-title {
-	width: 90%;
+	width: 100%;
 	margin-bottom: 2rem;
 }
 
 .card-container {
 	display: flex;
-	width: 90%;
+	width: 100%;
 	align-items: center;
 	justify-content: space-between;
 	color: gray;
@@ -53,10 +62,6 @@ main {
 	display: flex;
 	flex-direction: column;
 	width: 45%;
-}
-
-#unit {
-	padding: 0.2rem;
 }
 
 i {
@@ -73,18 +78,21 @@ h1 {
 	margin-bottom: 1rem;
 }
 
-input {
+input,
+select {
+	width: 100%;
 	font-size: 3rem;
 	padding: 0.2rem 3px;
+	transition: all 0.2s;
 }
 
 select {
-	background: rgba(245, 245, 245, 0.9);
 	font-size: 2rem;
+	opacity: 0.9;
 }
 
 option {
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 	color: whitesmoke;
 	background: black;
 }
@@ -100,7 +108,7 @@ select:hover {
 	background: black;
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 720px) {
 	main {
 		width: 95%;
 	}
